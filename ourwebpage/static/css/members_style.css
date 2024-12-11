@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    background-image: none;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.members-container
+{
+    padding: 0 5rem 0 5rem;
+    width: 100%;
+}
+
+.members-container .members-title
+{
+    margin: 2rem;
+}
+
+.members-container .members
+{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0; */
+    /* margin-bottom: 1rem; */
+}
+
+.members-container .members .member, img
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+}
+
+.members-container .members .name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.members-container .members .member.active + .name {
+    visibility: visible; /* Show the name when the member has the active class */
+}
+
+.members-container .members .member
+{
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.members-container .members .member.active
+{
+    border: 3px solid #007bff;
+}
+
+.members-container .member-info
+{
+    display: flex;
+}
+
+.members-container .member-info div
+{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.member-info div .column
+{
+    display: flex;
+    justify-content: center;
+}
+
+.member-info div .content ul ul
+{
+    padding-left: 2rem;
+}
+
+/* .member-info div .content li
+{
+    margin-bottom: 0.1rem;
+} */
